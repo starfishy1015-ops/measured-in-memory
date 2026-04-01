@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,400&family=Raleway:wght@300;400&family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: transparent; display: flex; align-items: center; justify-content: center; min-height: 80px; padding: 1rem; }
+  .player {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    border: 0.5px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.25rem 1.75rem;
+  }
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  .section-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #1a1a1a;
+    margin-bottom: 2px;
+  }
+  .project-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #aaa;
+  }
+  .timestamp {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 300;
+    color: #1a1a1a;
+  }
+  .track {
+    height: 3px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    position: relative;
+    margin: 0.85rem 0 0.5rem;
+  }
+  .fill {
+    height: 3px;
+    background: #7c6fa0;
+    border-radius: 3px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #7c6fa0;
+    border-radius: 50%;
+    position: absolute;
+    top: -3.5px;
+    transform: translateX(-50%);
+  }
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .end-label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #bbb;
+  }
+</style>
+</head>
+<body>
+<div class="player">
+  <div class="top-row">
+    <div>
+      <div class="section-name">Verse</div>
+      <div class="project-name">Measured in Memory</div>
+    </div>
+    <div class="timestamp">0:17 / 3:06</div>
+  </div>
+  <div class="track">
+    <div class="fill" style="width: 9.1%;"></div>
+    <div class="dot" style="left: 9.1%;"></div>
+  </div>
+  <div class="bottom-row">
+    <span class="end-label">Intro</span>
+    <span class="end-label">Outro</span>
+  </div>
+</div>
+</body>
+</html>
